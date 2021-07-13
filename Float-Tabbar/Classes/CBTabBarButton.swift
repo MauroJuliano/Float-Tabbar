@@ -125,19 +125,18 @@ public class CBTabBarButton: UIControl {
         if rightToLeft {
             tabImage.trailingAnchor.constraint(equalTo: tabBg.trailingAnchor, constant: -bgHeight/2.0).isActive = true
             tabImage.centerYAnchor.constraint(equalTo: tabBg.centerYAnchor).isActive = true
-            tabLabel.centerYAnchor.constraint(equalTo: tabBg.centerYAnchor).isActive = true
-            csFoldedLBLLeading = tabLabel.leadingAnchor.constraint(equalTo: tabBg.trailingAnchor)
-            csUnFoldedLBLLeading = tabLabel.leadingAnchor.constraint(equalTo: tabBg.leadingAnchor, constant: bgHeight/4.0)
+            csFoldedLBLLeading = tabImage.leadingAnchor.constraint(equalTo: tabBg.trailingAnchor)
+            csUnFoldedLBLLeading = tabImage.leadingAnchor.constraint(equalTo: tabBg.leadingAnchor, constant: bgHeight/4.0)
             csFoldedBgTrailing = tabImage.trailingAnchor.constraint(equalTo: tabBg.leadingAnchor, constant: bgHeight/2.0)
-            csUnFoldedBgTrailing = tabLabel.trailingAnchor.constraint(equalTo: tabImage.leadingAnchor, constant: -bgHeight/2.0)
+            csUnFoldedBgTrailing = tabImage.trailingAnchor.constraint(equalTo: tabImage.leadingAnchor, constant: -bgHeight/2.0)
         } else {
             tabImage.leadingAnchor.constraint(equalTo: tabBg.leadingAnchor, constant: bgHeight/2.0).isActive = true
             tabImage.centerYAnchor.constraint(equalTo: tabBg.centerYAnchor).isActive = true
-            tabLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-            csFoldedLBLLeading = tabLabel.leadingAnchor.constraint(equalTo: leadingAnchor)
-            csUnFoldedLBLLeading = tabLabel.leadingAnchor.constraint(equalTo: tabImage.trailingAnchor, constant: bgHeight/4.0)
+
+            csFoldedLBLLeading = tabImage.leadingAnchor.constraint(equalTo: leadingAnchor)
+            csUnFoldedLBLLeading = tabImage.leadingAnchor.constraint(equalTo: tabImage.trailingAnchor, constant: bgHeight/4.0)
             csFoldedBgTrailing = tabImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -bgHeight/2.0)
-            csUnFoldedBgTrailing = tabLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -bgHeight/2.0)
+            csUnFoldedBgTrailing = tabImage.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -bgHeight/2.0)
             
         }
         fold()
@@ -150,9 +149,6 @@ public class CBTabBarButton: UIControl {
         UIView.animate(withDuration: duration){
             self.tabBg.alpha = 0.0
         }
-//        UIView.animate(withDuration: duration * 0.4) {
-//            self.tabLabel.alpha = 0.0
-//        }
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
             self.tabImage.tintColor = .black
         }, completion: nil)
@@ -163,10 +159,6 @@ public class CBTabBarButton: UIControl {
         UIView.animate(withDuration: duration){
             self.tabBg.alpha = 1.0
         }
-//        UIView.animate(withDuration: duration * 0.5, delay: duration * 0.5, options: [], animations: {
-//            self.tabLabel.alpha = 1.0
-//        }, completion: nil)
-        
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
             self.tabImage.tintColor = self.tintColor
         }, completion: nil)
