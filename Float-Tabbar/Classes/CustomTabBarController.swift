@@ -42,9 +42,9 @@ open class CustomTabBarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         //tabBar.layer.cornerRadius = 40
         //tabBar.layer.maskedCorners = [.layerMaxXMaxYCorner,
-                                      .layerMaxXMinYCorner,
-                                      .layerMinXMaxYCorner,
-                                      .layerMinXMinYCorner]
+//                                      .layerMaxXMinYCorner,
+//                                      .layerMinXMaxYCorner,
+//                                      .layerMinXMinYCorner]
         self.setValue(tabBar, forKey: "tabBar")
     }
     
