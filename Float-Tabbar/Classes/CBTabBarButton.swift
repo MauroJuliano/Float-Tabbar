@@ -150,9 +150,9 @@ public class CBTabBarButton: UIControl {
         UIView.animate(withDuration: duration){
             self.tabBg.alpha = 0.0
         }
-        UIView.animate(withDuration: duration * 0.4) {
-            self.tabLabel.alpha = 0.0
-        }
+//        UIView.animate(withDuration: duration * 0.4) {
+//            self.tabLabel.alpha = 0.0
+//        }
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
             self.tabImage.tintColor = .black
         }, completion: nil)
@@ -163,9 +163,9 @@ public class CBTabBarButton: UIControl {
         UIView.animate(withDuration: duration){
             self.tabBg.alpha = 1.0
         }
-        UIView.animate(withDuration: duration * 0.5, delay: duration * 0.5, options: [], animations: {
-            self.tabLabel.alpha = 1.0
-        }, completion: nil)
+//        UIView.animate(withDuration: duration * 0.5, delay: duration * 0.5, options: [], animations: {
+//            self.tabLabel.alpha = 1.0
+//        }, completion: nil)
         
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
             self.tabImage.tintColor = self.tintColor
