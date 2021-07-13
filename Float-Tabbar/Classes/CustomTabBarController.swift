@@ -40,7 +40,7 @@ open class CustomTabBarController: UITabBarController {
         super.viewDidLoad()
         let tabBar = CustomTabBar()
         tabBar.layer.masksToBounds = true
-        tabBar.layer.cornerRadius = 50
+        tabBar.layer.cornerRadius = 40
         tabBar.layer.maskedCorners = [.layerMaxXMaxYCorner,
                                       .layerMaxXMinYCorner,
                                       .layerMinXMaxYCorner,
