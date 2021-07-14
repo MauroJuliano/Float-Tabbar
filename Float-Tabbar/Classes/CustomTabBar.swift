@@ -91,23 +91,23 @@ open class CustomTabBar: UITabBar {
         
         tabBar.itemWidth = 30.0
         tabBar.itemPositioning = .centered
-//        
+//
 //        backgroundColor = UIColor.white
 //        isTranslucent = false
 //        barTintColor = UIColor.white
 //        tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
-//        addSubview(container)
-//        container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
-//        container.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
-//        container.topAnchor.constraint(equalTo: topAnchor, constant: 1).isActive = true
-//        let bottomOfset: CGFloat
-//        if #available(iOS 11.0, *){
-//            bottomOfset = safeAreaInsets.bottom
-//        }else {
-//            bottomOfset = 0
-//        }
-//        csContainerBottom = container.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -bottomOfset)
-//        csContainerBottom.isActive = true
+        addSubview(container)
+        container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
+        container.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
+        container.topAnchor.constraint(equalTo: topAnchor, constant: 1).isActive = true
+        let bottomOfset: CGFloat
+        if #available(iOS 11.0, *){
+            bottomOfset = safeAreaInsets.bottom
+        }else {
+            bottomOfset = 0
+        }
+        csContainerBottom = container.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -bottomOfset)
+        csContainerBottom.isActive = true
     }
     
     override open func safeAreaInsetsDidChange() {
