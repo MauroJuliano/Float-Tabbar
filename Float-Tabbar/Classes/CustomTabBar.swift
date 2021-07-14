@@ -66,11 +66,11 @@ open class CustomTabBar: UITabBar {
     private var csContainerBottom: NSLayoutConstraint!
     
     private func configure() {
-        let tabBar = CustomTabBar()
-        tabBar.layer.masksToBounds = true
+        
+       
         
         let layer = CAShapeLayer()
-        layer.path = UIBezierPath(roundedRect: CGRect(x: 30, y: tabBar.bounds.minY + 5, width: tabBar.bounds.width - 60, height: tabBar.bounds.height + 10), cornerRadius: (tabBar.frame.width/2)).cgPath
+        layer.path = UIBezierPath(roundedRect: CGRect(x: 30, y: bounds.minY + 5, width: bounds.width - 60, height: bounds.height + 10), cornerRadius: (frame.width/2)).cgPath
         layer.shadowColor = UIColor.lightGray.cgColor
         layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         layer.shadowRadius = 25.0
@@ -81,16 +81,16 @@ open class CustomTabBar: UITabBar {
         layer.masksToBounds = false
         layer.fillColor = UIColor.white.cgColor
         
-        tabBar.layer.insertSublayer(layer, at: 0)
+        self.layer.insertSublayer(layer, at: 0)
         
-        if let items = tabBar.items {
+        if let items = items {
             items.forEach { item in
                 item.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: -15, right: 0)
             }
         }
         
-        tabBar.itemWidth = 30.0
-        tabBar.itemPositioning = .centered
+        itemWidth = 30.0
+        itemPositioning = .centered
 //
 //        backgroundColor = UIColor.white
 //        isTranslucent = false
