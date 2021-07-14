@@ -91,11 +91,11 @@ open class CustomTabBar: UITabBar {
         
         itemWidth = 30.0
         itemPositioning = .centered
-//
-//        backgroundColor = UIColor.white
-//        isTranslucent = false
-//        barTintColor = UIColor.white
-//        tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
+
+        backgroundColor = UIColor.white
+        isTranslucent = false
+        barTintColor = UIColor.white
+        tintColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.431372549, alpha: 1)
         addSubview(container)
         container.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
         container.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
