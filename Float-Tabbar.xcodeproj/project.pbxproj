@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D94778E26A07EBF00998B53 /* FloatTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94778B26A07EBF00998B53 /* FloatTabBar.swift */; };
+		9D94778F26A07EBF00998B53 /* FloatingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94778C26A07EBF00998B53 /* FloatingTabBarController.swift */; };
+		9D94779026A07EBF00998B53 /* MyTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94778D26A07EBF00998B53 /* MyTabBarItem.swift */; };
 		9D97E0BC269E2E0600FC43C8 /* Float_Tabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D97E0BA269E2E0600FC43C8 /* Float_Tabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D97E0C6269E2E4E00FC43C8 /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97E0C5269E2E4E00FC43C8 /* CBTabBarButton.swift */; };
-		9D97E0C8269E2E5000FC43C8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97E0C7269E2E5000FC43C8 /* CustomTabBar.swift */; };
-		9D97E0CA269E2E5400FC43C8 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97E0C9269E2E5400FC43C8 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D94778B26A07EBF00998B53 /* FloatTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTabBar.swift; sourceTree = "<group>"; };
+		9D94778C26A07EBF00998B53 /* FloatingTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingTabBarController.swift; sourceTree = "<group>"; };
+		9D94778D26A07EBF00998B53 /* MyTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarItem.swift; sourceTree = "<group>"; };
 		9D97E0B7269E2E0600FC43C8 /* Float_Tabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Float_Tabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97E0BA269E2E0600FC43C8 /* Float_Tabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Float_Tabbar.h; sourceTree = "<group>"; };
 		9D97E0BB269E2E0600FC43C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D97E0C5269E2E4E00FC43C8 /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabBarButton.swift; sourceTree = "<group>"; };
-		9D97E0C7269E2E5000FC43C8 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
-		9D97E0C9269E2E5400FC43C8 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 		9D97E0CB269E2E8100FC43C8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9D97E0C9269E2E5400FC43C8 /* CustomTabBarController.swift */,
-				9D97E0C5269E2E4E00FC43C8 /* CBTabBarButton.swift */,
-				9D97E0C7269E2E5000FC43C8 /* CustomTabBar.swift */,
+				9D94778C26A07EBF00998B53 /* FloatingTabBarController.swift */,
+				9D94778B26A07EBF00998B53 /* FloatTabBar.swift */,
+				9D94778D26A07EBF00998B53 /* MyTabBarItem.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D97E0C8269E2E5000FC43C8 /* CustomTabBar.swift in Sources */,
-				9D97E0C6269E2E4E00FC43C8 /* CBTabBarButton.swift in Sources */,
-				9D97E0CA269E2E5400FC43C8 /* CustomTabBarController.swift in Sources */,
+				9D94779026A07EBF00998B53 /* MyTabBarItem.swift in Sources */,
+				9D94778F26A07EBF00998B53 /* FloatingTabBarController.swift in Sources */,
+				9D94778E26A07EBF00998B53 /* FloatTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
