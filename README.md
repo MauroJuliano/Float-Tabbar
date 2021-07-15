@@ -1,5 +1,6 @@
-# Custom-TabBar
-<h1> Custom TabBar </h1>
+# Float-TabBar
+
+![Alt Text](https://media.giphy.com/media/vNIssJMpRi7c3lvNtP/giphy.gif)
 
 <h2>Requirements</h2>
 
@@ -8,7 +9,7 @@ xCode 10
 
 <h2>Installation</h2>
 Cocoa Pods
-pod 'Custom-TabBar', :git => 'https://github.com/MauroJuliano/Custom-TabBar.git'
+pod 'Float-TabBar', :git => 'https://github.com/MauroJuliano/Float-Tabbar.git'
 
 <h2>Usage</h2>
 
